@@ -95,3 +95,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     skillItems.forEach(item => observer.observe(item));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const imageLink = document.querySelector(".image-link");
+  
+    // Efeito ao clicar na imagem - um pequeno "pulse"
+    imageLink.addEventListener("click", (e) => {
+      e.currentTarget.classList.add("pulse-effect");
+  
+      setTimeout(() => {
+        e.currentTarget.classList.remove("pulse-effect");
+      }, 300);
+    });
+  });
+  
