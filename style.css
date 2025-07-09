@@ -201,6 +201,85 @@ header nav ul li a {
     color: #00eeff;
 }
 
+/* Estilos para a nova seção de portfólio de vídeos */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#portfolio-videos {
+    padding: 100px 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    text-align: center;
+    position: relative;
+}
+
+#portfolio-videos h2 {
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.video-grid-new {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.video-category-new {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-category-new:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+}
+
+.video-category-new h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.video-links-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.video-links-new a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.video-links-new a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
